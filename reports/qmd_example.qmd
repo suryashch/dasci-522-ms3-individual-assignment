@@ -2,6 +2,8 @@
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
 format: html
+html:
+    toc: true
 editor: source
 ---
 
@@ -11,18 +13,18 @@ from IPython.display import Markdown, display
 from tabulate import tabulate
 ```
 
-Aim
+## Aim
 
 This project explores the historical population of horses in Canada 
 between 1906 and 1972 for each province.
 
-Data
+## Data
 
 Horse population data were sourced from the 
-[Government of Canada's Open Data website](http://open.canada.ca/en/open-data) 
+[Government of Canada's Open Data website](http://open.canada.ca/en/open-data)
 (Government of Canada, 2017a and Government of Canada, 2017b).
 
-Methods
+## Methods
 
 The Python programming language (Van Rossum and Drake 2009)
 and the following Python packages were used to perform the analysis: 
@@ -30,11 +32,11 @@ pandas (McKinney 2010), altair (VanderPlas 2018), click (Team 2020),
 as well as Quarto (Allaire et al. 2022). 
 *Note: this report is adapted from Timbers (2020).* 
 
-Results
+## Results
 
-![](../results/horse_pops_plot.png)
+![Horse Populations](../results/horse_pops_plot.png){width=70% #fig-horse}
 
-Figure 1: Horse populations for all provinces in Canada from 1906 - 1972.
+@fig-horse: Horse populations for all provinces in Canada from 1906 - 1972.
 
 We can see from Figure 1 that Ontario, Saskatchewan and Alberta 
 have had the highest horse populations in Canada. 
@@ -63,10 +65,10 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
 Additionally, note that in Table 1 we consider the sample standard deviation of the number of horses during the same time span as Figure 1.
 
-![](../results/horse_pops_plot_largest_sd.png)
+![](../results/horse_pops_plot_largest_sd.png){width=70% #fig-horse_largest}
 
-Figure 2: Horse populations for the province with the largest standard deviation
+@fig-horse_largest: Horse populations for the province with the largest standard deviation
 
-In Figure 2 we zoom in and look at the province of ???, which had the largest spread of values in terms of standard deviation.
+In @fig-horse_largest we zoom in and look at the province of ???, which had the largest spread of values in terms of standard deviation.
 
-References
+## References
